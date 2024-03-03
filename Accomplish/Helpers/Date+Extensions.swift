@@ -8,4 +8,9 @@
 import SwiftUI
 
 /// Date Extensions Need for Building UI
-
+extension Date {
+  /// Checking Whether the Date is Today
+  var isToday: Bool {
+    return Calendar.current.isDateInToday(Date())
+  }
+}
